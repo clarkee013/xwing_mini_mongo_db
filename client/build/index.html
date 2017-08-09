@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Star Wars Quotes</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="bundle.js"></script>
+</head>
+<body>
+<div class="container">
+<form action="/items" method="POST">
+  <input type="text" placeholder="item" name="item">
+  <input type="text" placeholder="faction" name="faction">
+  <button type="submit">Submit</button>
+</form>
+<form action="/delete" method="POST">
+<button id="deleteButton" type="submit">Delete All</button>
+</form>
+</div>
+<div class="image_container">
+<img id="xwing-gfx" src="/images/xwing.png" />
+</div>
+<div class="list-container">
+<ul id="items">
+</ul>
+</div>
+</body>
+</html>
